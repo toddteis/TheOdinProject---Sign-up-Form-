@@ -27,6 +27,12 @@ h1 {
     font-family: norsebold, sans-serif;
 }
 
+/* HERO SECTION */
+
+.hero {
+    background-image: url('./assets/images/halie-west-25xggax4bSA-unsplash.jpg');
+}
+
 /* FOOTER */
 
 .attribution {
