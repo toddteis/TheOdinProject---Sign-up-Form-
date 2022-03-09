@@ -1,0 +1,13 @@
+/* FOOTER */
+
+.attribution {
+    height: 20px;
+    width: 100%;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    text-align: center;
+    background-color: #FCFAF9;
+}
+
+.attribution a { color: hsl(228, 45%, 44%); }
