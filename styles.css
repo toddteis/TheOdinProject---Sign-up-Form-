@@ -13,6 +13,7 @@
 
 html {
     box-sizing: border-box;
+    font-size: 16px;  
 }
 
 @font-face {
@@ -37,12 +38,50 @@ h1 {
     font-family: norsebold, sans-serif;
 }
 
+a {
+    color: white;
+}
+
+
+a:visited {
+    color: white;
+}
+
+
 /* HERO SECTION */
 
 .hero {
     background-image: url('./assets/images/halie-west-25xggax4bSA-unsplash.jpg');
     grid-area: her;
-    /* height: 150px; */
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.hero h1 {
+    font-size: 4rem;
+    display: inline;
+    color: white;
+}
+
+.hero-forward-image {
+    width: 60px;
+    height: auto;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    align-items: center;
+}
+
+.hero p {
+    position: absolute;
+    bottom: 10px;
+    align-self: center;
+    font-size: 0.75rem;
+    color: white;
 }
 
 /* CALL TO ACTION SECTION */
