@@ -23,6 +23,16 @@ html {
     font-style: normal;
 }
 
+main{
+    display: grid;
+    grid-template-columns: auto 72px 72px 72px 72px 72px auto;
+    grid-template-rows: 150px 400px;
+    grid-template-areas:
+        'sdl her her her her her sdr'
+        'sdl cta cta cta cta cta sdr'
+        ;
+}
+
 h1 {
     font-family: norsebold, sans-serif;
 }
@@ -31,6 +41,14 @@ h1 {
 
 .hero {
     background-image: url('./assets/images/halie-west-25xggax4bSA-unsplash.jpg');
+    grid-area: her;
+    /* height: 150px; */
+}
+
+/* CALL TO ACTION SECTION */
+
+.call-to-action {
+    grid-area: cta;
 }
 
 /* FOOTER */
