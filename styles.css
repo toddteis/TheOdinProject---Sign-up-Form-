@@ -24,7 +24,7 @@ html {
     font-style: normal;
 }
 
-main{
+main {
     display: grid;
     grid-template-columns: auto 72px 72px 72px 72px 72px auto;
     grid-template-rows: 150px 400px;
@@ -52,6 +52,8 @@ a:visited {
 
 .hero {
     background-image: url('./assets/images/halie-west-25xggax4bSA-unsplash.jpg');
+    background-repeat: no-repeat;
+    background-size: 360px;
     grid-area: her;
     display: flex;
     flex-direction: column;
