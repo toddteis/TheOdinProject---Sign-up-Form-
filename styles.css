@@ -27,7 +27,7 @@ html {
 main {
     display: grid;
     grid-template-columns: auto 72px 72px 72px 72px 72px auto;
-    grid-template-rows: 150px 400px;
+    grid-template-rows: 150px 700px;
     grid-template-areas:
         'sdl her her her her her sdr'
         'sdl cta cta cta cta cta sdr'
@@ -36,6 +36,14 @@ main {
 
 h1 {
     font-family: norsebold, sans-serif;
+}
+
+h2 {
+    font-size: 1.5rem;
+}
+
+h3 {
+    font-size: 1.2rem;
 }
 
 a {
@@ -92,7 +100,36 @@ a:visited {
 
 .call-to-action {
     grid-area: cta;
+    margin-top: 40px;
+    margin-bottom: 60px;
 }
+
+.call-to-action h2, form {
+    padding: 10px;
+}
+
+.form-inputs {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    margin-top: 10px;
+}
+
+input {
+    font-size: 1rem;
+    padding: 6px;
+    height: 2rem;
+}
+
+button {
+    margin-top: 10px;
+}
+
+
 
 /* FOOTER */
 
