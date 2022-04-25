@@ -17,6 +17,7 @@ html {
     box-sizing: border-box;
     font-size: 16px;
     font-family: 'Lato', sans-serif;
+    background-color: rgb(245, 245, 245);
 }
 
 @font-face {
@@ -28,13 +29,8 @@ html {
 }
 
 main {
-    display: grid;
-    grid-template-columns: auto 72px 72px 72px 72px 72px auto;
-    grid-template-rows: 150px 700px;
-    grid-template-areas:
-        'sdl her her her her her sdr'
-        'sdl cta cta cta cta cta sdr'
-        ;
+    display: flex;
+    flex-direction: column;
 }
 
 h1 {
@@ -59,17 +55,16 @@ a:visited {
     color: white;
 }
 
-
 /* HERO SECTION */
 
 .hero {
     background-image: url('./assets/images/halie-west-25xggax4bSA-unsplash.jpg');
     background-repeat: no-repeat;
-    background-size: 360px;
-    grid-area: her;
+    background-size: cover;
     display: flex;
     flex-direction: column;
     position: relative;
+    height: 150px;
 }
 
 .hero h1 {
@@ -103,9 +98,12 @@ a:visited {
 /* CALL TO ACTION SECTION */
 
 .call-to-action {
-    grid-area: cta;
-    margin-top: 40px;
+    background-color: rgb(245, 245, 245);
     margin-bottom: 60px;
+}
+
+.call-to-action-heading {
+    margin-top: 40px;
 }
 
 .call-to-action h2, form {
@@ -115,6 +113,16 @@ a:visited {
 .form-inputs {
     display: flex;
     flex-direction: column;
+    margin-bottom: 30px;
+}
+
+.border-area {
+    /* border-bottom: 1px solid rgb(128, 128, 128); */
+    /* box-shadow: 0px 5px 5px rgb(128, 128, 128, 0.4); */
+}
+
+.lower-shaded {
+    background-color: rgb(245, 245, 245);
 }
 
 label {
