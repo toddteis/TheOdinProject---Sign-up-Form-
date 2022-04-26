@@ -34,12 +34,13 @@
                         <label for="phone">Phone Number</label>
                         <input type="tele" name="phone" id="phone">
                         <label for="password">Password</label>
-                        <input type="password" name="password" id="password">
+                        <input type="password" name="password" class="error" id="password">
+                        <p class="pw-error" id="pw-error">* Passwords do not match.</p>
                         <label for="confirm-pw">Confirm Password</label>
-                        <input type="password" name="confirm-pw" id="confirm-pw">
+                        <input type="password" name="confirm-pw" class="error" id="confirm-pw">
                     </div>
                 </div>
-                <div class="lower-shaded">
+                <div class="form-submit-wrapper">
                     <button type="submit" value="create-account">Create Account</button>
                     <p>Already have an account? <span><a href="#">Log in</a></span></p>
                 </div>
