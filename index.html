@@ -28,32 +28,32 @@
                         <div class="form-group">
                             <div class="form-pair">
                                 <label for="fname">First Name</label>
-                                <input type="text" name="fname" id="fname">
+                                <input type="text" name="fname" id="fname" required>
                             </div>
                             <div class="form-pair">
                                 <label for="lname">Last Name</label>
-                                <input type="text" name="lname" id="lname">
+                                <input type="text" name="lname" id="lname" required>
                             </div>
                         </div>
                         <div class="form-group">
                             <div class="form-pair">
                                 <label for="email">Email</label>
-                                <input type="email" name="email" id="email">
+                                <input type="email" name="email" id="email" required>
                             </div>
                             <div class="form-pair">
                                 <label for="phone">Phone Number</label>
-                                <input type="tele" name="phone" id="phone">
+                                <input type="tel" name="phone" id="phone" pattern="[0-9]{10}" title="10 numbers required" required>
                             </div>
                         </div>
                         <div class="form-group">
                             <div class="form-pair">
                                 <label for="password">Password</label>
-                                <input type="password" name="password" class="error" id="password">
+                                <input type="password" name="password" class="error" id="password" required>
                                 <p class="pw-error" id="pw-error">* Passwords do not match.</p>
                             </div>
                             <div class="form-pair">
                                 <label for="confirm-pw">Confirm Password</label>
-                                <input type="password" name="confirm-pw" class="error" id="confirm-pw">
+                                <input type="password" name="confirm-pw" class="error" id="confirm-pw" required>
                             </div>
                         </div>
                     </div>
