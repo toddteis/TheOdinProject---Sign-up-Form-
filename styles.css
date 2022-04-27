@@ -152,12 +152,18 @@ input {
     height: 2rem;
     outline: none;
     width: 360px;
+    border: 1px solid #E5E7EB;
+    border-radius: 4px;
 }
 
 input:focus {
     border: 1px solid rgb(0, 0, 255);
     border-radius: 4px;
     box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+.hidden {
+    display: none;
 }
 
 .error {

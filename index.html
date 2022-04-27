@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles.css">
+    <script defer src="./main.js" ></script>
     <title>Sign-up Form</title>
 </head>
 <body>
@@ -21,7 +22,7 @@
                 <h2>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams.<br>Sign up <em>now</em> to get started.</h2>
                 <h2>You <em>know</em> you want to.</h2>
             </div>
-            <form action="">
+            <form action="/" method="GET" id="form">
                 <div class="border-area">
                     <h3>Let's do this!</h3>
                     <div class="form-inputs">
@@ -48,12 +49,12 @@
                         <div class="form-group">
                             <div class="form-pair">
                                 <label for="password">Password</label>
-                                <input type="password" name="password" class="error" id="password" required>
-                                <p class="pw-error" id="pw-error">* Passwords do not match.</p>
+                                <input type="password" name="password" class="password" id="password" required>
+                                <p class="pw-error hidden" id="pw-error">* Passwords do not match.</p>
                             </div>
                             <div class="form-pair">
                                 <label for="confirm-pw">Confirm Password</label>
-                                <input type="password" name="confirm-pw" class="error" id="confirm-pw" required>
+                                <input type="password" name="confirm-pw" class="confirm-pw" id="confirm-pw" required>
                             </div>
                         </div>
                     </div>
